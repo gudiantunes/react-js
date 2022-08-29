@@ -1,0 +1,21 @@
+.btn {
+    cursor: pointer;
+}
+
+.checkbox {
+    $color: white;
+    &.isChecked {
+        color: lightgreen;
+        $color: lightgreen;
+    }
+
+    &:hover {
+        color: darken($color, $amount: 50%);
+    }
+}
+
+.trashCan {
+    &:hover {
+        color: red
+    }
+}

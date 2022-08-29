@@ -1,0 +1,68 @@
+@import './components/icons';
+@import './components/form';
+
+*,
+.root {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #282c34;
+}
+
+.App {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 30px;
+}
+
+.container {
+  max-width: 500px;
+  min-height: 300px;
+  border: 2px solid green;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  padding: 30px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 2px solid green;
+  border-radius: 0.5rem;
+  background-color: #222;
+
+  &__title {
+    overflow: hidden;
+  }
+
+  &__opt {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__state {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid green;
+    background-color: #111;
+  }
+
+  &.isComplete{
+    border-left: 0.5rem solid green;
+    .task__title {
+      font-weight: lighter;
+      text-decoration: line-through;
+      // text-decoration-thickness: 0.1rem;
+      text-decoration-color: #ddd;
+      color: #bbb;
+      font-style: italic;
+    }
+
+  }
+}
